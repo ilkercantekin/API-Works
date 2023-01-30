@@ -44,12 +44,13 @@ public class C03__JsonObjesiOlusturma {
         innerJsonObje.put("checkin","2018-01-01");
         innerJsonObje.put("checkout","2019-01-01");
         JSONObject body = new JSONObject();
-        body.put("firstname","Jim");
-        body.put("additionalneeds","Breakfast");
+       body.put("firstname","Jim");
+       body.put("additionalneeds","Breakfast");
         body.put("bookingdates",innerJsonObje);
-        body.put("totalprice",111);
+       body.put("totalprice",111);
         body.put("depositpaid",true);
         body.put("lastname","Brown");
+
         System.out.println(body);
     }
 }
