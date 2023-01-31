@@ -8,7 +8,7 @@ import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class C8_JsonPathKullanimi {
+public class C08_JsonPathKullanimi {
     /*
     {
 "firstName":"Ahmet",
