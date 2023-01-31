@@ -85,7 +85,7 @@ public class C06_Post_ResponseBodyTesti {
             reqBody.put("title", "API");
             reqBody.put("body", "API ogrenmek ne guzel");
             reqBody.put("userId", 10);
-            // System.out.println(reqBody);   testte bir kere yazip kontrol edilince sonrakilaerde calistirilmaz
+            // System.out.println(reqBody);  // testte bir kere yazip kontrol edilince sonrakilaerde calistirilmaz
 
             // 2- expected data hazirla ama yok simdilik
 
@@ -96,7 +96,7 @@ public class C06_Post_ResponseBodyTesti {
                     when().
                     body(reqBody.toString()).
                     post(url);
-            // response.prettyPrint();   testte bir kere yazip kontrol edilince sonrakilaerde calistirilmaz
+             //response.prettyPrint();   //testte bir kere yazip kontrol edilince sonrakilaerde calistirilmaz
 
             // 4 - Asertion
             response.then().assertThat().statusCode(201).contentType("application/json").
