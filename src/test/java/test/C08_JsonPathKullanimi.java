@@ -64,13 +64,10 @@ public class C08_JsonPathKullanimi {
         kisiBilgisi.put("address",adresBilgisi);
         kisiBilgisi.put("phoneNumbers",telBilgileri);
         System.out.println(kisiBilgisi);
-        Response response = given().
-                contentType(ContentType.JSON).
-                when().
-                body(kisiBilgisi.toString()).
-                post(url);
-        response.prettyPrint();
 
 
-    }
+
+
+
+        }
 }
